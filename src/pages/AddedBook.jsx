@@ -19,11 +19,11 @@ export const AddedBook = () => {
           </button>
         </Link>
       </div>
-      <div className="grid grid-flow-row md:grid-flow-col md:grid-cols-5 gap-5">
+      <div className="grid grid-flow-row items-center justify-center md:grid-flow-col md:grid-cols-5 gap-5">
         {addedBooks.map((book, index) => (
           <div
             key={index}
-            className="border-2 rounded-lg border-black w-72 h-96 my-7 bg-gray-200 sm:h-72 md:w-52 grid"
+            className="border-2 rounded-lg place-items-center border-black w-72 h-96 my-7 bg-gray-200 sm:h-72 md:w-52 grid"
           >
             <h1 className="text-center text-2xl md:text-lg p-1 text-blue-600">
               <span className="text-black">Book Title:</span> {book.title}
